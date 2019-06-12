@@ -175,11 +175,11 @@ class AmoebacrmIntegration extends CrmAbstractIntegration {
           ];
         }
         $this->cache->set('leadFields.Contact', $leadFields);
+        return $leadFields;
       }
     }
-    $leadFields = $fields;
 
-    return $leadFields;
+    return $fields;
   }
 
   /**
