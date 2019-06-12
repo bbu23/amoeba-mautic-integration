@@ -408,7 +408,7 @@ class AmoebacrmIntegration extends CrmAbstractIntegration {
       }
       catch (Exception $e) {
         // Add error on Mautic.
-        $e->setContactId($lead['id']);
+        $e->setContactId($leadId);
         $this->logIntegrationError($e);
       }
     }
